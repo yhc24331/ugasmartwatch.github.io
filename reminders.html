@@ -88,18 +88,24 @@
           <input type="date" id="date" placeholder="Choose date" required>
            </h4>
       </div>
-     <div class="col-3">
-      <h4 class="col-6">Repeat:
-       <!-- <select id="repeat" name="repeat" class="col-6">
-          <option value="none">Do not repeat</option>
-          <option value="daily">Daily</option>
-          <option value="weekly">Weekly</option>
-          <option value="monthly">Monthly</option>
-          <option value="annually">Annually</option>
-        </select>-->
-        <button class="btn btn-secondary" onclick="showCustomOptions()">Customize</button>
-       </h4>
+     <div class="container my-5">
+      <div class="row">
+        <div class="col-3">
+          <h4 class="mb-3">Repeat:</h4>
+          <div class="d-flex align-items-center">
+            <select id="repeat" name="repeat" class="form-select me-3">
+              <option value="none">Do not repeat</option>
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="annually">Annually</option>
+            </select>
+            <button class="btn btn-secondary" onclick="showCustomOptions()">Customize</button>
+          </div>
+        </div>
+      </div>
     </div>
+
 
         <script src="reminders.js"></script>
       </div>
