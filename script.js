@@ -33,11 +33,10 @@ async function sendConfigToDB (id, configJSON) {
     const object = JSON.stringify(data);
 
     try {
-        const response = await fetch('https://cors-anywhere.herokuapp.com/https://vn.ugavel.com/ugasmartwatch/profiles', {
+        const response = await fetch('https://vn.ugavel.com/ugasmartwatch/profiles', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest',
           },
           body: object,
         });
