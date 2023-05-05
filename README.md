@@ -24,6 +24,7 @@
  # Documentation - notes
  
  > ***Reminders.js***
+ 
  > These are the variables needed for the alarm
     id : "mytimer",  // optional ID for this alarm/timer, so apps can easily find their timers
   appid : "myappid", // optional app ID for alarms that you set/use for your app
