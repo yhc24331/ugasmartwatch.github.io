@@ -48,9 +48,9 @@
   - del : false,         // if true, delete the timer after expiration
   > ***User Profile (index.html)***
   - Contains hardcoded values for Pet level and points, battery percentage,etc (not being retrieved from database)
-  - NavBar-> When admins login though login page: 
+  - NavBar - When admins login though login page: 
         - ADMIN logs in it should redirect to the index.html WITH ADMIN SETUP in navigation bar.
-             Otherwise, normal participant logins should NOT see the Admin Setup on nav bar in user profile page
+        - Otherwise, normal participant logins should NOT see the Admin Setup on nav bar in user profile page
         - When admins login it they should be able to access an EDITABLE version of the user profile page (index.html)
    - Survey Results: 
         - ADMIN sent surveys are denoted by the "red exclamation" in the survey results section of user profile page
