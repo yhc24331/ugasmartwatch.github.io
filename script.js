@@ -34,7 +34,7 @@ async function sendConfigToDB (id, configJSON) {
 
     try {
         const response = await fetch('https://vn.ugavel.com/ugasmartwatch/profiles', {
-          method: 'POST',
+          method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
           },
