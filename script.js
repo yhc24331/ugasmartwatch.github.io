@@ -90,3 +90,28 @@ document.getElementById("members-form").addEventListener("submit", function (eve
 
     sendConfigToDB(memberID, configJson);
 });
+
+
+
+
+document.querySelector(".view").addEventListener("click", async function () {
+  const memberId = document.getElementById("member-id").value;
+
+  try {
+      const configInfo = await fetch(`https://vn.ugavel.com/ugasmartwatch/profiles?device_id=${memberId}`, {
+          method: 'GET',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+      });
+
+      if (configInfo.ok) {
+          const data = await configInfo.text(); 
+          console.log('Received data:', data);
+      } else {
+          console.error('Error fetching data:', response.status);
+      }
+  } catch (error) {
+      console.error('Error while making the request:', error);
+  }
+});
