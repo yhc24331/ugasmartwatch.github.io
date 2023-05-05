@@ -26,11 +26,11 @@
  > ***Reminders.js***
  
  These are the variables needed for the alarm
-    id : "mytimer",  // optional ID for this alarm/timer, so apps can easily find their timers
-  appid : "myappid", // optional app ID for alarms that you set/use for your app
-  on : true,       // is the alarm enabled?
-  t : 23400000,    // Time of day since midnight in ms (if a timer, this is set automatically when timer starts)
-  dow : 0b1111111, // Binary encoding for days of the week to run alarm on
+  - id : "mytimer",  // optional ID for this alarm/timer, so apps can easily find their timers
+  - appid : "myappid", // optional app ID for alarms that you set/use for your app
+  - on : true,       // is the alarm enabled?
+  - t : 23400000,    // Time of day since midnight in ms (if a timer, this is set automatically when timer starts)
+  - dow : 0b1111111, // Binary encoding for days of the week to run alarm on
     //  SUN = 1
     //  MON = 2
     //  TUE = 4
@@ -39,10 +39,10 @@
     //  FRI = 32
     //  SAT = 64
 
-  date : "2022-04-04", // OPTIONAL date for the alarm, in YYYY-MM-DD format
-  msg : "Eat food",    // message to display.
-  last : 0,            // last day of the month we alarmed on - so we don't alarm twice in one day! (No change from 0 on timers)
-  rp : true,           // repeat the alarm every day? If date is given, pass an object instead of a boolean,
+  - date : "2022-04-04", // OPTIONAL date for the alarm, in YYYY-MM-DD format
+  - msg : "Eat food",    // message to display.
+  - last : 0,            // last day of the month we alarmed on - so we don't alarm twice in one day! (No change from 0 on timers)
+  - rp : true,           // repeat the alarm every day? If date is given, pass an object instead of a boolean,
                        // e.g. repeat every 2 months: { interval: "month", num: 2 }.
                        // Supported intervals: day, week, month, year
-  del : false,         // if true, delete the timer after expiration
+  - del : false,         // if true, delete the timer after expiration
