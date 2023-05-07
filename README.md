@@ -20,6 +20,11 @@
  - contains the page to add customized reminders
  > userpf.js
  - contains the javascript needed for main user profile page. Currently, has JS code to populate activity graph and for datepicker.
+ > pet.html
+ - The main page for selecting the virtual pet and creating the background.
+ > pet.js
+ - Contains the javascript needed to save the user's selected pet and also the background that they create.
+ 
  
  # Documentation - notes
  
