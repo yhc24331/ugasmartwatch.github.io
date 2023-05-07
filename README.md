@@ -59,3 +59,6 @@
     -  When admins login it they should be able to access an EDITABLE version of the user profile page (index.html)
    - Survey Results: 
         - ADMIN sent surveys are denoted by the "red exclamation" in the survey results section of user profile page
+        
+ > ***pet.js/pet.html***
+ - Contains the hardcoded base64 pet images along with the grid that the user draws on to create their background 
